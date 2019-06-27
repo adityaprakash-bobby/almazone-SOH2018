@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <title>Alma Mater</title>
+
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="#" id="text_company">AlmaZone</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto" id="text_top">
+              <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+              <a class="nav-item nav-link" href="{{url_for('main.about')}}">Alumni Directory</a>
+              <a class="nav-item nav-link" href="#">Fundraising</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav" id="text_top">
+                <a class="nav-item nav-link" href="#">New Post</a>
+                <a class="nav-item nav-link" href="#">Account</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+     </header>
+     <div id="sec_header" style="background-color: #e6e6e6;text-align: center;height: 120px;padding-top:30px;padding-bottom: 30px; ">
+       <h4 style="font-size: 40px">Donation And Fundraising</h4>
+       <p>Contribute back to your college through various initiatives</p>
+     </div>
+
+<div class="container" id="About">
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="{{url_for('static',filename='fund.jpg')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Donation to Fund</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{url_for('static',filename='scholarship.jpg')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Scholarship</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{url_for('static',filename='blood.jpg')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" ><a href="{{url_for('main.bl_donation')}}">Blood donation</a></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+    <footer>
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel" id="footer_bg">
+        <h4 id="footer_con">Connect to us:<br><i class="fab fa-facebook" id="icon"></i><i class="fab fa-twitter" id="icon"></i><i class="fab fa-linkedin" id="icon"></i></h4>
+        <div id="footer_right">
+          <h6>About</h6>
+          <h6>Privacy policy</h6>
+          <h6>FAQ</h6>
+        </div>
+
+    </footer>

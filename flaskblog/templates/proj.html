@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <title>AlmaZone</title>
+
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">AlmaZone</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+              <a class="nav-item nav-link" href="{{url_for('main.about')}}">Alumni Directory</a>
+              <a class="nav-item nav-link" href="{{url_for('main.funds')}}">Fundraising</a>
+              <input type="text" name="" placeholder="search here" id="nav_text">
+              <button id="nav_search">Search</button>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">New Post</a>
+                <a class="nav-item nav-link" href="#">Account</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!--     <div class="container_search">
+      <input type="text" name="search" placeholder="Search keyword" id="search">
+    </div> -->
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-section" id="filter">
+            <h5 id="filter_text">Filter by :</h5><hr>
+            <h6><u>Branches</u></h6><br>
+            <div>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Mechanical engineering</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Chemical engineering</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Civil engineering</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Electrical engineering</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Electronics engineering</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Computer Science</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Metallurgical engineering</label><br>
+
+              <button id="filter_button" style="width:150px;padding: 5px; " class="btn btn-primary">Apply</button>
+            </div><hr>
+
+            <h6><u>Languages</u></h6><br>
+            <div>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">C</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">#C</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">C++</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Java</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Python</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Ruby</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">R</label><br>
+
+              <button id="filter_button" style="width:150px;padding: 5px; " class="btn btn-primary">Apply</button>
+            </div><hr>
+
+            <h6><u>Project type</u></h6><br>
+            <div>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Minor project</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Prototypes</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Incubated project</label><br>
+              <input type="checkbox" id="scales" name="scales">
+              <label for="scales">Start-ups</label><br>
+
+              <button id="filter_button" style="width:150px;padding: 5px; " class="btn btn-primary">Apply</button>
+            </div><hr>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-8" id="">
+          <div class="content-section">
+            <h5>Hello World!</h5>
+            <p>A simple C program to display "Hello, World!" on the screen. Since, it's a very simple program, it is often used to illustrate the syntax of a programming language.<br><br><a href="#">C</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style=" width:150px;border-radius: 10px; " disabled="" class="btn btn-danger">completed</button>
+            <button style="width:150px;padding: 5px;border-radius: 10px;  " class="btn btn-primary">Minor project</button>
+            <hr>
+            <h5>App and Website-Live Streaming</h5>
+            <p> create live streaming site, live streaming app red5, project requirements live streaming webcam, online video streaming, broadcast live.<br><br><a href="#">Android</a><a href="#">  ios</a><a href="#">  website development</a><a href="#">  Database</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style="width:150px;border-radius: 10px; " disabled="" class="btn btn-warning">ongoing</button>
+            <button style="width:150px;padding: 5px;border-radius: 10px; " class="btn btn-primary">Incubated project</button>
+            <hr>
+            <h5>create view from json</h5>
+            <p>create a view seat map layout from json response, see attachment for example json, and seatmap layout<br><br>
+              <a href="#"> HTML5</a><a href="#">  jQuery</a><a href="#">  AJAX</a><a href="#">  Javascipr</a><a href="#">  node.js</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style=" width:150px;border-radius: 10px; " disabled="" class="btn btn-warning">ongoing</button>
+            <button style="width:150px;padding: 5px;border-radius: 10px;  " class="btn btn-primary">Prototypes</button>
+            <hr>
+            <h5>Wireframe clickable prototype </h5>
+            <p>Mobile application clickable prototype<br><br>
+              <a href="#"> Android</a><a href="#">  jQuery</a><a href="#">  HTML5</a><a href="#">  Mobile app development</a><a href="#">  ios</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style=" width:150px;border-radius: 10px; " disabled="" class="btn btn-success">starts on 1st Dec</button>
+            <button style="width:150px;padding: 5px;border-radius: 10px;  " class="btn btn-primary">Start-ups</button>
+            <hr>
+            <h5>Caching HTTPS for ISP</h5>
+            <p>To cache all HTTPS websites for ISP . Using Squid or anything else.
+             Nothing to install at client's side (Certificate) or at least a ONE TIME CA only .
+             It must have a GUI interface for settings and graphs and information for bandwidth in/out.<br><br>
+              <a href="#"> Apache</a><a href="#">  java</a><a href="#">  javascript</a><a href="#">  php</a><a href="#">  Linux</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style=" width:150px;border-radius: 10px; " disabled="" class="btn btn-success">starts on 25th Nov</button>
+            <button style="width:150px;padding: 5px; border-radius: 10px; " class="btn btn-primary">Incubated project</button>
+            <hr>
+            <h5>Bank payment integration</h5>
+            <p>Integration with bank Credit card system as payment gateway with Opencart<br><br>
+              <a href="#"> eCommerce</a><a href="#">  html</a><a href="#">  opencart</a><a href="#">  php</a><a href="#">  website design</a></p><br>
+            <button style="width:100px;border-radius: 10px;" class="btn btn-info">Know more</button>
+            <button style="width:150px;border-radius: 10px; " disabled="" class="btn btn-danger">completed</button>
+            <button style="width:150px;padding: 5px;border-radius: 10px;  " class="btn btn-primary">Start-ups</button>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

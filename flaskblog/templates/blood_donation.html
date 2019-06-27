@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <title>Alma Mater</title>
+        <style type="text/css">
+          .container_form{
+            margin-left: 30%;
+            margin-right: 30%;
+          }
+        </style>
+
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="#" id="text_company">AlmaZone</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto" id="text_top">
+              <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+              <a class="nav-item nav-link" href="{{url_for('main.about')}}">Alumni Directory</a>
+              <a class="nav-item nav-link" href="{{url_for('main.funds')}}">Fundraising</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav" id="text_top">
+                <a class="nav-item nav-link" href="#">New Post</a>
+                <a class="nav-item nav-link" href="#">Account</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<div class="container_form">
+<form>
+  <div class="form-group">
+    <label  style="font-size: 20px;font-weight: bold;">Full Name</label>
+    <input class="form-control"  placeholder="Enter your name">
+  </div>
+  <div class="form-group">
+    <label  style="font-size: 20px;font-weight: bold;">Blood Group</label>
+    <input class="form-control" placeholder="e.g : A +ve">
+  </div>
+  <div class="form-group">
+    <label style="font-size: 20px;font-weight: bold;" >Hospital Name</label>
+    <input class="form-control" placeholder="Enter hospital name">
+  </div>
+  <div class="form-group">
+    <label style="font-size: 20px;font-weight: bold;">Address With Pin Code</label>
+    <input class="form-control" placeholder="Enter address of the hospital">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
